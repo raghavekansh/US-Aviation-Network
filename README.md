@@ -28,19 +28,16 @@ The study models airports as nodes and flight routes as weighted edges to explor
 
 ---
 ## 🧠 Methodology / End-to-End Pipeline
-Dataset (data/raw)
-↓
-Data Cleaning & Preprocessing (src/data_processing.py)
-↓
-Network Construction (src/network_analysis.py)
-↓
-Centrality & Community Detection (NetworkX + Louvain)
-↓
-Visualization & Insights (notebooks/01-exploration.ipynb)
-↓
-Exported Figures & Tables (outputs/figures)
 
----
+The overall workflow of this project follows an **end-to-end data → analysis → insight** pipeline:
+
+graph TD;
+    A[📦 Dataset (data/raw)] --> B[🧹 Data Cleaning & Preprocessing <br>(src/data_processing.py)];
+    B --> C[🕸️ Network Construction <br>(src/network_analysis.py)];
+    C --> D[📊 Centrality & Community Detection <br>(NetworkX + Louvain)];
+    D --> E[🎨 Visualization & Insights <br>(notebooks/01-exploration.ipynb)];
+    E --> F[🖼️ Exported Figures & Tables <br>(outputs/figures)];
+
 ## 🧠 Key Results
 - 1,574 airports and 17,215 routes modeled
 - 20 communities detected (modularity ≈ 0.2541)
