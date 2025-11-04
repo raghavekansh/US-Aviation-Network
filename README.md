@@ -11,7 +11,7 @@ The study models airports as nodes and flight routes as weighted edges to explor
 ## 📁 Repository Structure
 | Folder | Description |
 |--------|--------------|
-| **Code/** | Jupyter/Colab notebook with all analysis steps |
+| **Code/** | Colab notebook with all analysis steps |
 | **Poster/** | Final project poster summarizing results |
 | **Report/** | Detailed project report (PDF) |
 | **dataset/** | Raw input files (`USairport_2010.txt`, `USairport_2010_codes.txt`) |
