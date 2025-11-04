@@ -27,9 +27,9 @@ The study models airports as nodes and flight routes as weighted edges to explor
 - Revealed that the system is **robust to random failures** but **vulnerable to targeted attacks** on major hubs.
 
 ---
-## 🧠 Methodology / End-to-End Pipeline
+## ✨ Methodology / End-to-End Pipeline
 
-📦 Dataset → 🧹 Cleaning → 🕸️ Construction → 📊 Analysis → 🎨 Visualization → 🖼️ Outputs
+📦 Dataset → 🧹 Data Cleaning & Preprocessing → 🕸️ Network Construction → 📊 Centrality & Community Detection Analysis → 🎨 Visualization & Insights → 🖼️ Exported Figures & Tables
 
 ## 🧠 Key Results
 - 1,574 airports and 17,215 routes modeled
