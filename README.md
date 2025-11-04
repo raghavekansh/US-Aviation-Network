@@ -17,7 +17,30 @@ The study models airports as nodes and flight routes as weighted edges to explor
 | **dataset/** | Raw input files (`USairport_2010.txt`, `USairport_2010_codes.txt`) |
 
 ---
+## 🚀 Key Highlights
+- Constructed a **weighted airport network** using U.S. Bureau of Transportation Statistics data.  
+- Computed major **centrality measures** — Degree, Betweenness, Closeness, Eigenvector, and HITS.  
+- Applied **Louvain community detection** to identify clusters of highly connected airports.  
+- Calculated **assortativity** and **clustering coefficients** to measure structural properties.  
+- Visualized **degree distributions** and **network maps** to highlight core hubs and regional sub-networks.  
+- Demonstrated **scale-free characteristics**, confirming the hub-and-spoke pattern of U.S. aviation.  
+- Revealed that the system is **robust to random failures** but **vulnerable to targeted attacks** on major hubs.
 
+---
+## 🧠 Methodology / End-to-End Pipeline
+Dataset (data/raw)
+↓
+Data Cleaning & Preprocessing (src/data_processing.py)
+↓
+Network Construction (src/network_analysis.py)
+↓
+Centrality & Community Detection (NetworkX + Louvain)
+↓
+Visualization & Insights (notebooks/01-exploration.ipynb)
+↓
+Exported Figures & Tables (outputs/figures)
+
+---
 ## 🧠 Key Results
 - 1,574 airports and 17,215 routes modeled
 - 20 communities detected (modularity ≈ 0.2541)
@@ -26,9 +49,15 @@ The study models airports as nodes and flight routes as weighted edges to explor
 
 ---
 
-## 🛠️ Tools & Libraries
-- Python, NetworkX, Pandas, Matplotlib, Seaborn  
-- Community detection (Louvain algorithm)
+## 🧩 Frameworks & Libraries
+- **Python**
+- **NetworkX**
+- **Pandas**
+- **NumPy**
+- **Matplotlib**
+- **Scikit-learn**
+- **python-louvain**
+- **Seaborn**
 
 ---
 
